@@ -56,7 +56,6 @@ var chatConfig={
             isSpeechEnabled: true,
             allowLocation : true
     };
-
 var chatInstance = koreBotChat(); // get chat instance
     chatInstance.show(chatConfig); // open chat window
     chatInstance.destroy(); // for destroying chat window instance
