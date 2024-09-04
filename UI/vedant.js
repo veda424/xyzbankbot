@@ -48,7 +48,17 @@ var chatConfig={
     allowLocation : true
 };
     // Assign Bot options to chatWindow config 
-    
-    
+    // Assign Bot options to chatWindow config      
+var chatConfig={
+            botOptions:botOptions,
+            isSendButton: false,
+            isTTSEnabled: true,
+            isSpeechEnabled: true,
+            allowLocation : true
+    };
+
+var chatInstance = koreBotChat(); // get chat instance
+    chatInstance.show(chatConfig); // open chat window
+    chatInstance.destroy(); // for destroying chat window instance
     
     
